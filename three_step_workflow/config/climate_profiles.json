@@ -1,0 +1,139 @@
+{
+  "hong_kong": {
+    "display_name": "Hong Kong",
+    "region_family": "hong_kong",
+    "baseline_osm": "climate_inputs/hong_kong/baseline.osm",
+    "weather_file": "climate_inputs/hong_kong/weather.epw",
+    "weather_ddy": "climate_inputs/hong_kong/weather.ddy",
+    "weather_stat": "climate_inputs/hong_kong/weather.stat",
+    "chiller_reference_conditions": {
+      "leaving_chilled_water_c": 7.0,
+      "air_cooled_entering_condenser_c": 35.0,
+      "water_cooled_entering_condenser_c": 32.0
+    },
+    "chiller_reference_performance": {
+      "air_cooled_chiller_cop_min": 3.3,
+      "water_cooled_chiller_cop_min": 5.5,
+      "centrifugal_water_cooled_chiller_cop_min": 5.9
+    },
+    "heat_pump_heating_baseline": {
+      "types": [],
+      "status": "not_applicable_no_heating_period"
+    },
+    "heating_periods": [],
+    "standards_priority": ["Hong Kong", "Mainland", "ASHRAE"],
+    "reference_pack": "reference/GB55015_multi_climate_baseline_pack.xlsx"
+  },
+  "beijing": {
+    "display_name": "Beijing",
+    "region_family": "mainland",
+    "baseline_osm": "climate_inputs/beijing/baseline.osm",
+    "weather_file": "climate_inputs/beijing/weather.epw",
+    "weather_ddy": "climate_inputs/beijing/weather.ddy",
+    "weather_stat": "climate_inputs/beijing/weather.stat",
+    "chiller_reference_conditions": {
+      "leaving_chilled_water_c": 7.0,
+      "air_cooled_entering_condenser_c": 35.0,
+      "water_cooled_entering_condenser_c": 30.0
+    },
+    "chiller_reference_performance": {
+      "air_cooled_chiller_cop_min": 3.0,
+      "water_cooled_chiller_cop_min": 5.5,
+      "centrifugal_water_cooled_chiller_cop_min": 6.2
+    },
+    "heat_pump_heating_baseline": {
+      "types": ["air_source_heat_pump"],
+      "reference_leaving_hot_water_c": 45.0,
+      "air_source_reference_outdoor_air_c": -9.9,
+      "air_source_heating_cop_min": 2.4
+    },
+    "heating_periods": [{"start": "10-27", "end": "04-02"}],
+    "standards_priority": ["Mainland", "ASHRAE"],
+    "reference_pack": "reference/GB55015_multi_climate_baseline_pack.xlsx"
+  },
+  "shanghai": {
+    "display_name": "Shanghai",
+    "region_family": "mainland",
+    "baseline_osm": "climate_inputs/shanghai/baseline.osm",
+    "weather_file": "climate_inputs/shanghai/weather.epw",
+    "weather_ddy": "climate_inputs/shanghai/weather.ddy",
+    "weather_stat": "climate_inputs/shanghai/weather.stat",
+    "chiller_reference_conditions": {
+      "leaving_chilled_water_c": 7.0,
+      "air_cooled_entering_condenser_c": 35.0,
+      "water_cooled_entering_condenser_c": 30.0
+    },
+    "chiller_reference_performance": {
+      "air_cooled_chiller_cop_min": 3.2,
+      "water_cooled_chiller_cop_min": 5.5,
+      "centrifugal_water_cooled_chiller_cop_min": 6.3
+    },
+    "heat_pump_heating_baseline": {
+      "types": ["air_source_heat_pump", "water_source_heat_pump"],
+      "reference_leaving_hot_water_c": 45.0,
+      "air_source_reference_outdoor_air_c": -2.2,
+      "water_source_reference_entering_water_c": 20.0,
+      "air_source_heating_cop_min": 2.0,
+      "water_source_heating_cop_min": 4.0
+    },
+    "heating_periods": [{"start": "12-03", "end": "03-20"}],
+    "standards_priority": ["Mainland", "ASHRAE"],
+    "reference_pack": "reference/GB55015_multi_climate_baseline_pack.xlsx"
+  },
+  "shenyang": {
+    "display_name": "Shenyang",
+    "region_family": "mainland",
+    "baseline_osm": "climate_inputs/shenyang/baseline.osm",
+    "weather_file": "climate_inputs/shenyang/weather.epw",
+    "weather_ddy": "climate_inputs/shenyang/weather.ddy",
+    "weather_stat": "climate_inputs/shenyang/weather.stat",
+    "chiller_reference_conditions": {
+      "leaving_chilled_water_c": 7.0,
+      "air_cooled_entering_condenser_c": 35.0,
+      "water_cooled_entering_condenser_c": 30.0
+    },
+    "chiller_reference_performance": {
+      "air_cooled_chiller_cop_min": 2.9,
+      "water_cooled_chiller_cop_min": 5.5,
+      "centrifugal_water_cooled_chiller_cop_min": 6.1
+    },
+    "heat_pump_heating_baseline": {
+      "types": ["air_source_heat_pump"],
+      "reference_leaving_hot_water_c": 45.0,
+      "air_source_reference_outdoor_air_c": -20.7,
+      "air_source_heating_cop_min": 2.0
+    },
+    "heating_periods": [{"start": "10-09", "end": "04-14"}],
+    "standards_priority": ["Mainland", "ASHRAE"],
+    "reference_pack": "reference/GB55015_multi_climate_baseline_pack.xlsx"
+  },
+  "kunming": {
+    "display_name": "Kunming",
+    "region_family": "mainland",
+    "baseline_osm": "climate_inputs/kunming/baseline.osm",
+    "weather_file": "climate_inputs/kunming/weather.epw",
+    "weather_ddy": "climate_inputs/kunming/weather.ddy",
+    "weather_stat": "climate_inputs/kunming/weather.stat",
+    "chiller_reference_conditions": {
+      "leaving_chilled_water_c": 7.0,
+      "air_cooled_entering_condenser_c": 35.0,
+      "water_cooled_entering_condenser_c": 30.0
+    },
+    "chiller_reference_performance": {
+      "air_cooled_chiller_cop_min": 3.0,
+      "water_cooled_chiller_cop_min": 5.5,
+      "centrifugal_water_cooled_chiller_cop_min": 6.1
+    },
+    "heat_pump_heating_baseline": {
+      "types": ["air_source_heat_pump", "water_source_heat_pump"],
+      "reference_leaving_hot_water_c": 45.0,
+      "air_source_reference_outdoor_air_c": 0.9,
+      "water_source_reference_entering_water_c": 20.0,
+      "air_source_heating_cop_min": 2.0,
+      "water_source_heating_cop_min": 4.0
+    },
+    "heating_periods": [{"start": "11-13", "end": "02-28"}],
+    "standards_priority": ["Mainland", "ASHRAE"],
+    "reference_pack": "reference/GB55015_multi_climate_baseline_pack.xlsx"
+  }
+}

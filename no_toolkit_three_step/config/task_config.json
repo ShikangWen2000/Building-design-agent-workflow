@@ -1,0 +1,73 @@
+{
+  "location": "hong_kong",
+  "openstudio_exe": "C:/openstudioapplication-1.5.0/bin/openstudio.exe",
+  "inputs": {
+    "baseline_osm": "inputs/hong_kong/baseline.osm",
+    "weather_file": "inputs/hong_kong/weather_2021_measured.epw"
+  },
+  "site": {
+    "center_x_m": "read from the baseline model",
+    "center_y_m": "read from the baseline model",
+    "width_m": 45.0,
+    "depth_m": 45.0,
+    "north_axis_deg": "read from the baseline model"
+  },
+  "building": {
+    "target_floor_area_m2": 16315.0,
+    "area_tolerance_m2": 250.0,
+    "stories": 18,
+    "floor_height_m": 4.0,
+    "core_width_m": 21.0,
+    "core_depth_m": 12.0,
+    "min_core_to_facade_depth_m": 4.5,
+    "max_core_area_share": 0.3,
+    "max_tiers": 4,
+    "max_vertices_per_tier": 12,
+    "min_facade_segment_m": 1.0,
+    "max_upper_tier_overhang_m": 1.5
+  },
+  "step1": {
+    "wwr": 0.56,
+    "wwr_tolerance": 0.01
+  },
+  "step2": {
+    "wwr_min": 0.5,
+    "wwr_max": 0.9,
+    "wwr_tolerance": 0.02,
+    "max_window_projection_ratio": 0.3,
+    "max_orientation_projection_ratio": 0.3,
+    "max_board_depth_m": 1.0,
+    "min_board_spacing_m": 3.0,
+    "max_shading_area_ratio": 0.3
+  },
+  "step3": {
+    "pmv_tolerance_pct_points": 1.0,
+    "ventilation_max_time_below_pct": 1.0,
+    "ventilation_min_occupied_ratio": 0.99,
+    "chilled_water_design_delta_t_k": 5.0,
+    "high_temperature_loop_min_exit_c": 10.0,
+    "condenser_water_design_delta_t_k": 5.0,
+    "max_doas_chilled_water_c": 7.0,
+    "min_source_sizing_factor": 1.0,
+    "cooling_setpoint_max_offset_k": 1.0,
+    "humidity_max_rh_pct": 70.0,
+    "humidity_min_occupied_share": 0.95,
+    "radiant_min_dewpoint_offset_c": 1.0,
+    "beam_min_dewpoint_margin_c": 1.0,
+    "beam_min_hours_share": 0.99
+  },
+  "budget": {
+    "1": {
+      "valid_target": 20,
+      "max_attempts": 60
+    },
+    "2": {
+      "valid_target": 10,
+      "max_attempts": 30
+    },
+    "3": {
+      "valid_target": 10,
+      "max_attempts": 30
+    }
+  }
+}

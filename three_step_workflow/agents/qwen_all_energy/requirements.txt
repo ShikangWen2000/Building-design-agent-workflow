@@ -1,0 +1,4 @@
+openai
+langgraph
+jsonschema>=4.23,<5
+

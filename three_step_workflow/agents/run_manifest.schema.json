@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agents/run_manifest.schema.json",
+  "title": "Three-step design run manifest",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "manifest_version",
+    "experiment_protocol_version",
+    "run_id",
+    "status",
+    "location",
+    "condition",
+    "reviewer_evidence_scope",
+    "counts_requested",
+    "simulation_settings",
+    "invocations"
+  ],
+  "properties": {
+    "schema_id": { "const": "agents/run_manifest.schema.json" },
+    "manifest_version": { "type": "string" },
+    "experiment_protocol_version": { "type": "string" },
+    "run_id": { "type": "string" },
+    "status": { "enum": ["running", "completed", "failed"] },
+    "location": { "type": "string" },
+    "condition": { "type": "string" },
+    "reviewer_evidence_scope": {
+      "type": "object",
+      "required": ["step1", "step2", "step3", "claim_limit"]
+    },
+    "counts_requested": {
+      "type": "object",
+      "required": ["step1", "step2", "step3"]
+    },
+    "simulation_settings": {
+      "type": "object",
+      "required": ["weather_file", "step1_timestep_per_hour", "step2_timestep_per_hour", "step3_timestep_per_hour"]
+    },
+    "invocations": { "type": "array" }
+  },
+  "additionalProperties": true
+}

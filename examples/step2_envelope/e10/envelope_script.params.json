@@ -1,0 +1,11 @@
+{
+  "description": "e07 shading (awnings 0.99 m / 28.7% drop everywhere; fins north/south/east tower and west stories 9-18) with milder story grading: tower east/south/west WWR 0.45, stories 1-5 south 0.597 and east/west 0.540, stories 6-9 0.50; north uniform 0.50.",
+  "design_intent": "Grading response so far on the same shading: tower 0.42 -> 289.022 (e07), tower 0.36 -> 289.066 (e09_r1), uniform 0.50 about 0.02 above e05's graded result. The optimum lies between uniform and 0.42; 0.45 tests the interior.",
+  "params": {
+    "all":   {"wwr": 0.50, "head_m": 3.3, "side_margin_m": 0.06, "awning_out_m": 0.99, "awning_drop": 0.287, "fin_out_m": 0.0, "fin_spacing_m": 3.0},
+    "north": {"fin_out_m": 0.99, "fin_stories": [10, 18]},
+    "west":  {"fin_out_m": 0.99, "fin_stories": [9, 18], "wwr_by_story": [[1, 5, 0.540], [10, 18, 0.45]]},
+    "south": {"fin_out_m": 0.99, "fin_stories": [10, 18], "wwr_by_story": [[1, 5, 0.597], [10, 18, 0.45]]},
+    "east":  {"fin_out_m": 0.99, "fin_stories": [10, 18], "wwr_by_story": [[1, 5, 0.540], [10, 18, 0.45]]}
+  }
+}

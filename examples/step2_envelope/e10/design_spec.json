@@ -1,0 +1,5 @@
+{
+  "description": "e07 shading (awnings 0.99 m / 28.7% drop everywhere; fins north/south/east tower and west stories 9-18) with milder story grading: tower east/south/west WWR 0.45, stories 1-5 south 0.597 and east/west 0.540, stories 6-9 0.50; north uniform 0.50.",
+  "design_intent": "Grading response so far on the same shading: tower 0.42 -> 289.022 (e07), tower 0.36 -> 289.066 (e09_r1), uniform 0.50 about 0.02 above e05's graded result. The optimum lies between uniform and 0.42; 0.45 tests the interior.",
+  "envelope_script": "e10.rb"
+}

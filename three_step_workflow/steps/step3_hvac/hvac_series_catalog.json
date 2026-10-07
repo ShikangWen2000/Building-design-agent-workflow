@@ -1,0 +1,152 @@
+[
+  {
+    "series_id": "fcu_air_chiller_no_heat",
+    "family": "doas_fcu",
+    "label": "DOAS + FCU + air-cooled chiller + no heating"
+  },
+  {
+    "series_id": "fcu_water_chiller_no_heat",
+    "family": "doas_fcu",
+    "label": "DOAS + FCU + water-cooled chiller + no heating"
+  },
+  {
+    "series_id": "fcu_air_chiller_boiler",
+    "family": "doas_fcu",
+    "label": "DOAS + FCU + air-cooled chiller + boiler heating"
+  },
+  {
+    "series_id": "fcu_air_chiller_ashp_heat",
+    "family": "doas_fcu",
+    "label": "DOAS + FCU + air-cooled chiller + ASHP heating"
+  },
+  {
+    "series_id": "fcu_water_chiller_boiler",
+    "family": "doas_fcu",
+    "label": "DOAS + FCU + water-cooled chiller + boiler heating"
+  },
+  {
+    "series_id": "fcu_water_chiller_ashp_heat",
+    "family": "doas_fcu",
+    "label": "DOAS + FCU + water-cooled chiller + ASHP heating"
+  },
+  {
+    "series_id": "fcu_air_chiller_wshp_heat",
+    "family": "doas_fcu",
+    "label": "DOAS + FCU + air-cooled chiller + WSHP heating"
+  },
+  {
+    "series_id": "fcu_water_chiller_wshp_heat",
+    "family": "doas_fcu",
+    "label": "DOAS + FCU + water-cooled chiller + WSHP heating"
+  },
+  {
+    "series_id": "fcu_ashp_heat_cool",
+    "family": "doas_fcu",
+    "label": "DOAS + air-source heat pump heating and cooling"
+  },
+  {
+    "series_id": "fcu_wshp_heat_cool",
+    "family": "doas_fcu",
+    "label": "DOAS + water-source heat pump heating and cooling"
+  },
+  {
+    "series_id": "rad_air_air_no_heat",
+    "family": "doas_radiant",
+    "label": "DOAS + high-lift air-cooled chiller + radiant low-lift air-cooled chiller + no heating"
+  },
+  {
+    "series_id": "rad_water_water_no_heat",
+    "family": "doas_radiant",
+    "label": "DOAS + high-lift water-cooled chiller + radiant low-lift water-cooled chiller + no heating"
+  },
+  {
+    "series_id": "rad_water_water_boiler",
+    "family": "doas_radiant",
+    "label": "DOAS + high-lift water-cooled chiller + radiant low-lift water-cooled chiller + boiler heating"
+  },
+  {
+    "series_id": "rad_air_air_boiler",
+    "family": "doas_radiant",
+    "label": "DOAS + high-lift air-cooled chiller + radiant low-lift air-cooled chiller + boiler heating"
+  },
+  {
+    "series_id": "rad_air_air_ashp",
+    "family": "doas_radiant",
+    "label": "DOAS + high-lift air-cooled chiller + radiant low-lift air-cooled chiller + ASHP heating"
+  },
+  {
+    "series_id": "rad_water_water_ashp",
+    "family": "doas_radiant",
+    "label": "DOAS + high-lift water-cooled chiller + radiant low-lift water-cooled chiller + ASHP heating"
+  },
+  {
+    "series_id": "rad_air_air_wshp",
+    "family": "doas_radiant",
+    "label": "DOAS + high-lift air-cooled chiller + radiant low-lift air-cooled chiller + WSHP heating"
+  },
+  {
+    "series_id": "rad_water_water_wshp",
+    "family": "doas_radiant",
+    "label": "DOAS + high-lift water-cooled chiller + radiant low-lift water-cooled chiller + WSHP heating"
+  },
+  {
+    "series_id": "rad_ashp_ashp",
+    "family": "doas_radiant",
+    "label": "DOAS + high-lift ASHP + radiant low-lift ASHP"
+  },
+  {
+    "series_id": "rad_wshp_wshp",
+    "family": "doas_radiant",
+    "label": "DOAS + high-lift WSHP + radiant low-lift WSHP"
+  },
+  {
+    "series_id": "cb_air_air_no_heat",
+    "family": "doas_chilled_beam",
+    "label": "DOAS + active chilled beam + air-cooled high/low lift cooling + no heating"
+  },
+  {
+    "series_id": "cb_water_water_no_heat",
+    "family": "doas_chilled_beam",
+    "label": "DOAS + active chilled beam + water-cooled high/low lift cooling + no heating"
+  },
+  {
+    "series_id": "cb_water_water_boiler",
+    "family": "doas_chilled_beam",
+    "label": "DOAS + active chilled beam + water-cooled cooling + boiler heating"
+  },
+  {
+    "series_id": "cb_air_air_boiler",
+    "family": "doas_chilled_beam",
+    "label": "DOAS + active chilled beam + air-cooled cooling + boiler heating"
+  },
+  {
+    "series_id": "cb_air_air_ashp",
+    "family": "doas_chilled_beam",
+    "label": "DOAS + active chilled beam + air-cooled cooling + ASHP heating"
+  },
+  {
+    "series_id": "cb_water_water_ashp",
+    "family": "doas_chilled_beam",
+    "label": "DOAS + active chilled beam + water-cooled cooling + ASHP heating"
+  },
+  {
+    "series_id": "cb_air_air_wshp",
+    "family": "doas_chilled_beam",
+    "label": "DOAS + active chilled beam + air-cooled cooling + WSHP heating"
+  },
+  {
+    "series_id": "cb_water_water_wshp",
+    "family": "doas_chilled_beam",
+    "label": "DOAS + active chilled beam + water-cooled cooling + WSHP heating"
+  },
+  {
+    "series_id": "cb_ashp_ashp",
+    "family": "doas_chilled_beam",
+    "label": "DOAS + active chilled beam + ASHP high/low lift"
+  },
+  {
+    "series_id": "cb_wshp_wshp",
+    "family": "doas_chilled_beam",
+    "label": "DOAS + active chilled beam + WSHP high/low lift"
+  }
+]

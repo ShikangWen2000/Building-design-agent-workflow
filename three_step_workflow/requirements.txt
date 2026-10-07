@@ -1,0 +1,9 @@
+openai
+langgraph
+jsonschema>=4.23,<5
+matplotlib
+numpy
+scipy
+shapely>=2.1,<3
+# Optional toolkit/analyze_rhino_blockm.py dependency:
+# rhino3dm

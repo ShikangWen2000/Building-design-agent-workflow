@@ -1,0 +1,34 @@
+{
+  "description": "c015 (three-tier, +10 deg) with the upper tower at aspect 1.37.",
+  "design_hypothesis": "At +10 deg, aspect 1.2 (307.666) was worse than 1.3 (307.646), so the orientation term gained weight; 1.37 tests the other side of 1.3 (1.45 was too elongated at 0 deg).",
+  "area_tolerance_m2": 250,
+  "massing": {
+    "rotation_deg": 10,
+    "parametric_tiers": [
+      {
+        "story_start": 0,
+        "story_end": 5,
+        "shape": "regular_polygon",
+        "sides": 12,
+        "aspect_ratio": 1.0,
+        "area_weight": 1.79
+      },
+      {
+        "story_start": 5,
+        "story_end": 9,
+        "shape": "regular_polygon",
+        "sides": 12,
+        "aspect_ratio": 1.0,
+        "area_weight": 1.69
+      },
+      {
+        "story_start": 9,
+        "story_end": 18,
+        "shape": "regular_polygon",
+        "sides": 12,
+        "aspect_ratio": 1.37,
+        "area_weight": 1.0
+      }
+    ]
+  }
+}

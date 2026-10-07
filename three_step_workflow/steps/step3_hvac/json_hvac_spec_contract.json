@@ -1,0 +1,67 @@
+{
+  "description": "LLM-authored HVAC plan contract. This file is a neutral structure example, not a runnable recommended system.",
+  "design_intent": "State the climate, comfort, humidity, and energy hypothesis for this iteration.",
+  "case_id": "hvac_llm_001",
+  "tool_plan": {
+    "case_id": "hvac_llm_001",
+    "strategy_summary": "Replace with an original strategy chosen from active feedback.",
+    "tool_calls": [
+      {
+        "tool": "replace_with_available_tool_name",
+        "args": {
+          "replace_with_required_and_justified_args": "values must follow the selected tool docs and numeric bounds"
+        }
+      }
+    ],
+    "engineering_basis": "Replace with the actual active-location standard/ASHRAE basis and active-climate rationale for this case.",
+    "rationale": "Explain how this responds to the active feedback packet.",
+    "autosized_fields": [
+      "fields intentionally left to OpenStudio/toolkit autosizing"
+    ],
+    "hard_sized_fields": [
+      "every numeric arg intentionally specified by the agent"
+    ]
+  },
+  "air_process_design": {
+    "load_basis": "<weather at the design hours, zone load and setpoint assumptions>",
+    "cooling": {
+      "process_notes": "<outdoor -> DOAS coil -> fan -> zone supply -> zone, and the terminal>",
+      "states": {
+        "outdoor": {
+          "temperature_c": 0.0,
+          "humidity_ratio_g_kg": 0.0
+        },
+        "coil_outlet": {
+          "temperature_c": 0.0,
+          "humidity_ratio_g_kg": 0.0
+        },
+        "doas_zone_supply": {
+          "temperature_c": 0.0,
+          "humidity_ratio_g_kg": 0.0
+        },
+        "zone": {
+          "temperature_c": 0.0,
+          "humidity_ratio_g_kg": 0.0
+        }
+      }
+    },
+    "heating": {
+      "process_notes": "<winter process>",
+      "states": {
+        "outdoor": {
+          "temperature_c": 0.0,
+          "humidity_ratio_g_kg": 0.0
+        },
+        "doas_zone_supply": {
+          "temperature_c": 0.0,
+          "humidity_ratio_g_kg": 0.0
+        },
+        "zone": {
+          "temperature_c": 0.0,
+          "humidity_ratio_g_kg": 0.0
+        }
+      }
+    }
+  },
+  "llm_generated_files": []
+}

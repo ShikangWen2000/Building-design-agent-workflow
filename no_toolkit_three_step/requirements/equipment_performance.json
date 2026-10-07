@@ -1,0 +1,118 @@
+{
+  "note": "Reference equipment performance for Step 3. Efficiencies are upper limits, pressures and heads are lower limits.",
+  "chillers": {
+    "standard_leaving_chilled_water_c": 7.0,
+    "maximum_credited_leaving_chilled_water_c": 16.0,
+    "cop_gain_per_c_above_standard": 0.035,
+    "curve_source": "ASHRAE 90.1-2010 Path A (openstudio-standards data): AirCooled_Chiller_2010_PathA CAPFT/EIRFT with AirCooled_Chiller_AllCapacities_2004_2010_EIRFPLR; WaterCooled_PositiveDisplacement_Chiller_GT150_2010_PathA CAPFT/EIRFT with ChlrWtrCentPathAAllEIRRatio_fQRatio. Biquadratic in leaving chilled water x and entering condenser y (C): c1 + c2 x + c3 x^2 + c4 y + c5 y^2 + c6 x y. The two temperature curves are divided by their value at the chiller's reference conditions; the part-load curve (quadratic in part-load ratio) is used as given.",
+    "air_cooled": {
+      "reference_cop": 3.3,
+      "reference_entering_condenser_c": 35.0,
+      "capft": [
+        1.0433825,
+        0.0407073,
+        0.0004506,
+        -0.0041514,
+        -8.86e-05,
+        -0.0003467
+      ],
+      "eirft": [
+        0.5961915,
+        -0.0099496,
+        0.0007888,
+        0.0004506,
+        0.0004875,
+        -0.0007623
+      ],
+      "eirfplr": [
+        0.141,
+        0.655,
+        0.203
+      ]
+    },
+    "water_cooled": {
+      "reference_cop": 5.5,
+      "reference_entering_condenser_c": 32.0,
+      "capft": [
+        0.906115,
+        0.0292277,
+        -0.0003647,
+        -0.0009709,
+        -9.05e-05,
+        0.0002527
+      ],
+      "eirft": [
+        0.3773115,
+        -0.0229032,
+        0.0016504,
+        0.0118156,
+        0.0004345,
+        -0.0010132
+      ],
+      "eirfplr": [
+        0.222149,
+        0.503156,
+        0.256905
+      ]
+    }
+  },
+  "fans": {
+    "maximum_total_efficiency": 0.55,
+    "maximum_motor_efficiency": 0.92,
+    "minimum_pressure_rise_pa": {
+      "zone_equipment": "read from the baseline model",
+      "air_loop": "read from the baseline model",
+      "relief": "read from the baseline model"
+    }
+  },
+  "pumps": {
+    "minimum_head_pa": "read from the baseline model",
+    "maximum_motor_efficiency": 0.9
+  },
+  "other_equipment": {
+    "OS:Boiler:HotWater": {
+      "Nominal Thermal Efficiency": 0.9
+    },
+    "OS:HeatExchanger:AirToAir:SensibleAndLatent": {
+      "Sensible Effectiveness at 100% Heating Air Flow": 0.8,
+      "Latent Effectiveness at 100% Heating Air Flow": 0.8,
+      "Sensible Effectiveness at 75% Heating Air Flow": 0.8,
+      "Latent Effectiveness at 75% Heating Air Flow": 0.8,
+      "Sensible Effectiveness at 100% Cooling Air Flow": 0.8,
+      "Latent Effectiveness at 100% Cooling Air Flow": 0.8,
+      "Sensible Effectiveness at 75% Cooling Air Flow": 0.8,
+      "Latent Effectiveness at 75% Cooling Air Flow": 0.8
+    },
+    "OS:Coil:Cooling:DX:SingleSpeed": {
+      "Rated COP": 3.3
+    },
+    "OS:Coil:Cooling:DX:TwoSpeed": {
+      "Rated High Speed COP": 3.3,
+      "Rated Low Speed COP": 3.3
+    },
+    "OS:Coil:Cooling:DX:VariableSpeed:SpeedData": {
+      "Reference Unit Gross Rated Cooling COP": 3.3
+    },
+    "OS:Coil:Cooling:DX:MultiSpeed:StageData": {
+      "Gross Rated Cooling COP": 3.3
+    },
+    "OS:Coil:Cooling:DX:CurveFit:Speed": {
+      "Gross Cooling COP": 3.3
+    },
+    "OS:AirConditioner:VariableRefrigerantFlow": {
+      "Gross Rated Cooling COP": 3.3
+    },
+    "OS:HeatPump:PlantLoop:EIR:Cooling": {
+      "Reference Coefficient of Performance": 3.2
+    },
+    "OS:HeatPump:WaterToWater:EquationFit:Cooling": {
+      "Reference Coefficient of Performance": 5.0
+    },
+    "OS:Coil:Cooling:WaterToAirHeatPump": {
+      "Rated Cooling Coefficient of Performance": 5.0
+    },
+    "OS:Chiller:Absorption": "not_allowed",
+    "OS:EvaporativeCooler": "not_allowed",
+    "OS:ThermalStorage": "not_allowed"
+  }
+}

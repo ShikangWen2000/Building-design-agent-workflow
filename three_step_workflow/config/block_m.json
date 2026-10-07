@@ -1,0 +1,54 @@
+{
+  "project_name": "Block M Hong Kong Office",
+  "openstudio_exe": "C:/openstudioapplication-1.5.0/bin/openstudio.exe",
+  "blender_exe": "",
+  "source_osm": "climate_inputs/hong_kong/baseline.osm",
+  "weather_file": "climate_inputs/hong_kong/weather.epw",
+  "site": {
+    "width_m": 45.0,
+    "depth_m": 45.0,
+    "latitude_deg": 22.32,
+    "longitude_deg": 114.17,
+    "north_axis_deg": "read from the baseline model"
+  },
+  "building": {
+    "target_floor_area_m2": 16315.0,
+    "stories": 18,
+    "floor_height_m": 4.0,
+    "target_wwr": 0.56,
+    "core_width_m": 21.0,
+    "core_depth_m": 12.0,
+    "min_core_to_facade_depth_m": 4.5,
+    "max_core_area_share": 0.3,
+    "ground_floor_boundary": "Adiabatic"
+  },
+  "hvac": {
+    "psychrometric_design_hours": {
+      "cooling": {
+        "month": 7,
+        "day": 21,
+        "hour": 15
+      },
+      "heating": {
+        "month": 1,
+        "day": 20,
+        "hour": 9
+      }
+    }
+  },
+  "optimization": {
+    "seed": 901,
+    "step1_valid_case_target": 20,
+    "step2_valid_case_target": 10,
+    "step3_valid_case_target": 10,
+    "max_repair_attempts_per_design": 3
+  },
+  "step1_massing": {
+    "rotation_range_deg": {
+      "start": 0.0,
+      "stop": 360.0,
+      "step": 1.0,
+      "include_stop": false
+    }
+  }
+}

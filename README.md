@@ -28,9 +28,8 @@ published.
 
 ## Baseline model
 
-The OpenStudio model of the case building is not distributed. The code and the configuration contain no property
-of that building other than the design brief (site size and location, number of stories, floor-area target, core size); all other
-values are read from the baseline model when a run starts:
+Apart from the design brief (site size and location, number of stories, floor-area target, core size), the
+values of the building are read from the baseline model when a run starts:
 
 - Step 1 and Step 2 build each candidate on the baseline model: constructions, internal loads, schedules,
   thermostats, infiltration, zone sizing settings, and the HVAC system are inherited, and only the geometry

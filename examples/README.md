@@ -1,7 +1,7 @@
 # Examples
 
 The selected candidate of each step of the representative Hong Kong run (Claude Opus 5.5 in Claude Code), as
-submitted by the agent. Models are not included.
+submitted by the agent.
 
 | Folder | Files |
 |---|---|
@@ -11,9 +11,6 @@ submitted by the agent. Models are not included.
 
 Case identifiers are those of the run: the selected Step 1 design is iteration 20, the selected Step 2 design is
 iteration 11, and the selected Step 3 design is iteration 11 in the paper, which also counts invalid proposals.
-Two values of the baseline model that the agent quoted in the Step 3 files (a fan pressure and a pump head) were
-removed from the text, and the name of one baseline schedule was replaced by a description; nothing else was
-changed.
 
 The files are named by their content. Inside the specifications, the scripts keep the names of the run:
 `e10.rb` is `envelope_script.rb`, and the Step 3 script is in `hvac_script/`. The examples are records of the

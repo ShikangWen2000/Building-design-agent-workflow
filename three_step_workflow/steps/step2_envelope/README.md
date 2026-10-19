@@ -1,9 +1,7 @@
 # Step 2 Envelope
 
-> Note on this release: this document is kept as it was used in the experiments and describes the complete
-> repository. The baseline model, the weather file of the
-> measured year, and the scripts for model generation, simulation, and validation that it names are not part
-> of this release (see the README at the root).
+> This document describes the complete workflow. The scripts it names will be added when the paper is
+> published.
 
 Step 2 keeps the selected Step 1 massing fixed and designs the facade: windows
 and external shading. There is no menu of window or shading types. Each case

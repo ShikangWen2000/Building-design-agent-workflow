@@ -1,9 +1,7 @@
 # HVAC Toolkit
 
-> Note on this release: this document is kept as it was used in the experiments and describes the complete
-> repository. The baseline model, the weather file of the
-> measured year, and the scripts for model generation, simulation, and validation that it names are not part
-> of this release (see the README at the root).
+> This document describes the complete workflow. The scripts it names will be added when the paper is
+> published.
 
 HVAC model construction, validation, simulation and MCP interfaces for Step 3.
 
@@ -127,8 +125,8 @@ heating and cooling source equipment and their associated coils:
 | Mild / Kunming | Nov 13-Feb 28 |
 
 Cooling sources stay available all year; the DOAS cooling coil is off during
-the heating period. The dates come from the project's multi-climate system
-document (not included in the repository). Models whose weather/site metadata
+the heating period. The dates are the heating periods of the four cities
+in the paper (Appendix Table A.4). Models whose weather/site metadata
 does not match these cities retain their existing source schedules.
 
 ## COP Defaults And Sources

@@ -1,9 +1,7 @@
 # Step 3: HVAC
 
-> Note on this release: this document is kept as it was used in the experiments and describes the complete
-> repository. The baseline model, the weather file of the
-> measured year, and the scripts for model generation, simulation, and validation that it names are not part
-> of this release (see the README at the root).
+> This document describes the complete workflow. The scripts it names will be added when the paper is
+> published.
 
 Step 3 applies HVAC designs to the selected Step 2 envelope, runs EnergyPlus,
 and ranks eligible cases by selected total EUI.

@@ -1,9 +1,7 @@
 # Block M three-step design task
 
-> Note on this release: this document is kept as it was used in the experiments and describes the complete
-> repository. The baseline model, the weather file of the
-> measured year, and the scripts for model generation, simulation, and validation that it names are not part
-> of this release (see the README at the root).
+> This document describes the complete workflow. The scripts it names will be added when the paper is
+> published.
 
 A self-contained design task for an agent: improve the site energy use
 intensity of an 18-story Hong Kong office building in three steps (massing,
